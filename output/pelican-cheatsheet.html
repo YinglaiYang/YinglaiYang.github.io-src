@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Yinglai Yang</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/theme/styles.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/theme/slicknav.css">
+    <script src="/theme/jquery.slicknav.min.js"></script>
+    <!--Font Awesome: Used for the icons. Eg. social network links.-->
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <script type="text/javascript"
+	    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+    <![endif]-->
+<script>
+	$(function(){
+		$('#menu').slicknav({'label':''});
+	});
+</script>
+<link rel="icon" href="/theme/favicon.ico" sizes="16x16 32x32 48x48 64x64" type="image/vnd.microsoft.icon">
+<link rel="apple-touch-icon" sizes="114x114" href="/theme/apple-touch-icon-precomposed.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/theme/favicon152.png">
+<link rel="apple-touch-icon" sizes="196x196" href="/theme/favicon196.png">
+  </head>
+
+  <body>
+    <div id="wrapper">
+
+      <header>
+	<nav class="byline"><ul id="menu">
+            <li><a href="localhost:8000/index.html">Home</a></li>
+            <li><a href="./pages/about.html">About</a></li>
+            <li><a href="./pages/contact.html">Contact</a></li>
+        </ul></nav><!-- /#menu -->
+        <div class="downloads">
+          <a href="#"><i title=You can add links in your config file class="fab fa-You can add links in your config file"></i></a>
+          <a href="https://medium.com/@yinglaiyang"><i title=medium class="fab fa-medium"></i></a>
+          <a href="http://www.linkedin.com/in/yinglaiyang"><i title=linkedin class="fab fa-linkedin"></i></a>
+          <a href="https://twitter.com/yinglaiyang"><i title=twitter class="fab fa-twitter"></i></a>
+          <a href="https://github.com/YinglaiYang"><i title=github class="fab fa-github"></i></a>
+        </div>
+        <hgroup>
+          <h1>Pelican Cheatsheet</h1>
+  <footer class="article-footer">
+    <address class="vcard author">
+      By           <a class="url fn" href="./author/yinglai-yang.html">Yinglai Yang</a>
+    </address>
+    <abbr class="published" title="2019-06-10T13:01:00+02:00">
+       on 10.06.2019
+    </abbr>
+  </footer><!-- /.post-info -->
+        </hgroup>
+  
+
+
+
+      </header>
+<section id="content" class="body article">
+  <div class="entry-content">
+    <p>This page collects the steps in the Pelican workflow for blogging.</p>
+<p>Steps:</p>
+<ol>
+<li><code>cd ~/Documents/Writings/Blog-source</code> - Change to the project folder.</li>
+<li><code>workon pelican</code> - This will activate the virtual environment.</li>
+<li>Do the changes in the content. E.g. add a new article in <strong>Blog-source/content</strong>.</li>
+<li><code>make devserver</code> - Recompiles and serves the refreshed blog whenever it detects a change.</li>
+<li>Open the locally served blog in a browser under <code>http://localhost:8000</code>.</li>
+</ol>
+  </div><!-- /.entry-content -->
+  <div class="article-share-tags">
+  <div class="end-article-tags">
+  </div>
+  <div class='article-share'>
+      share -
+  </div>
+  </div>
+</section>
+<div class="neighbors">
+</div>
+      <footer>
+
+	  <div class="right-footer">
+	  <a href="./categories.html" >Categories</a>
+	  <a href="./tags.html" >Tags</a>
+	  </div>
+      </footer>
+</body>
+</html>
