@@ -3,14 +3,16 @@ Date: 2019-06-10 13:01
 Category: Site test
 Status: published
 
-This page collects the steps in the Pelican workflow for blogging.
+This page collects my steps in the Pelican workflow for blogging. It is intended as a place for me to look up all the design decisions and technical steps to ensure the <mark>visual consistency</mark> of the blog is upheld.
+
+The contained sections go through the steps for writing and updating, and then the steps to add various media in different formats.
 
 # Adding or Updating Content
 ## Normal Text Content
 
 1. `cd ~/Documents/Writings/Blog-source` - Change to the project folder.
 2. `workon pelican` - This will activate the virtual environment.
-3. Do the changes in th˘e content. E.g. add a new article in **Blog-source/content**.
+3. Do the changes in the content. E.g. add a new article in `Blog-source/content`.
 4. `make devserver` - Recompiles and serves the refreshed blog whenever it detects a change.
 5. Open the locally served blog in a browser under `http://localhost:8000`.
 6. Generate static output when satisfied with content.
@@ -21,7 +23,9 @@ This page collects the steps in the Pelican workflow for blogging.
 ### Video - Youtube
 Embed Youtube videos using the provided code:
 
+<div class="responsive-video">
 <iframe width="853" height="480" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay="false"; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 
 ### Pictures - Instagram
@@ -31,3 +35,10 @@ To embed images from Instagram paste the embed code that is provided.
 
 
 # Custom Domain
+The custom domain for this blog was registered with Ionos. Following the instructions from GitHub Pages (["GitHub: Setting up an apex domain and www subdomain"][4f5f105d]), both an apex domain ("yinglaiyang.blog") and a www-subdomain were set up.
+
+The setup for the www-subdomain remains static, as the CNAME that is defined on Ionos points to the web address of my user profile on GitHub: yinglaiyang.github.io
+
+The setup for the apex domain requires maintenance, as Ionos only allows the definiton of A (IPv4) or AAAA (IPv6), which directly point to the IP-address. Those might change. The current IP-addresses are available here: ["GitHub: Configuring A records with your DNS provider"](https://help.github.com/en/articles/setting-up-an-apex-domain#configuring-a-records-with-your-dns-provider)
+
+  [4f5f105d]: https://help.github.com/en/articles/setting-up-an-apex-domain-and-www-subdomain "GitHubCustomDomainHowTo"
